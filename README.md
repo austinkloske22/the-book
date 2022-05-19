@@ -1,2 +1,7 @@
 # the-book
-The Rust Programming Language
+[The Rust Programming Language 1.58](https://doc.rust-lang.org/book/title-page.html)
+
+Following along The Book to document my thoughts while learning rust
+
+[Section 3.3](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html) I like this language.. Let's create a git repo of my progress learning rust. It might come in handy in the future.
+
