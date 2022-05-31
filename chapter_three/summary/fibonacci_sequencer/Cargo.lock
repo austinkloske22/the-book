@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "practice_chapter_three"
+name = "fibonacci_sequencer"
 version = "0.1.0"

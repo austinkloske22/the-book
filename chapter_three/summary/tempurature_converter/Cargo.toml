@@ -1,5 +1,5 @@
 [package]
-name = "practice_chapter_three"
+name = "tempurature_converter"
 version = "0.1.0"
 edition = "2021"
 

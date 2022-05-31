@@ -21,19 +21,9 @@ fn main() {
         },
     };
 
-    // println!("You entered: {} {}", temp, scale);
-
-    let converted_temp = match scale {
-        "C" => celsius_to_fahrenheit(temp),
-        "F" => fahrenheit_to_celsius(temp),
-        &_ => { 
-            panic!( "That wasn't valid input! Temperatures must be in format 32F or 18C!" )
-        },
-    };
-
     match scale {
-        "C" => println!("{} {}, = {} {}", temp, scale, converted_temp, "F"),
-        "F" => println!("{} {}, = {} {}", temp, scale, converted_temp, "C"),
+        "C" => println!("{}{}, = {}{}", temp, scale, celsius_to_fahrenheit(temp), "F"),
+        "F" => println!("{}{}, = {}{}", temp, scale, fahrenheit_to_celsius(temp), "C"),
         &_ => { 
             panic!( "That wasn't valid input! Temperatures must be in format 32F or 18C!" )
         },
