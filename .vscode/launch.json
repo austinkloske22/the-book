@@ -8,6 +8,14 @@
             "program": "${workspaceRoot}/ownership/target/debug/ownership",
             "args": [],
             "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "structures",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/structures/target/debug/structures",
+            "args": [],
+            "cwd": "${workspaceRoot}",
         }
     ]
 }

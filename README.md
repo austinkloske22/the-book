@@ -34,3 +34,5 @@ Using VSCode, install `Rust` & `CodeLLDB` extensions then create a `launch.json`
 ![debug](./images/debug-ownership.png)
 
 
+## Structures
+
