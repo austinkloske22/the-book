@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ownership",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/ownership/target/debug/ownership",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+        }
+    ]
+}

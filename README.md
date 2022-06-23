@@ -1,18 +1,36 @@
-# the-book
-[The Rust Programming Language 1.58](https://doc.rust-lang.org/book/title-page.html)
+# The Book
 
-Following along The Book to document my thoughts while learning rust
+Following along [The Book](https://doc.rust-lang.org/book/title-page.html) to document my thoughts and progress while learning Rust. I am coming from a javascript, typescript background, The sample applications we build along the way are located in the `./apps` directory:
 
-[Section 3.3](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html) I like this language.. Let's create a git repo of my progress learning rust. It might come in handy in the future.
+- guessing game
+- tempurature converter
+- fibonacci sequencer
+- christmas carol lyrics
 
-[Section 3.5](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
-How do we replicate try / catch here? 
+## Ownership
+
+Rust manages memory efficiently through `ownership`. To types of memory are stack & heap. Stacks are FIFO system such as a stack of plates. length and type must be static. This is why I cannot push data onto an array like we do so often in typescript. Tuples utilize heap based memory which require a pointer to access.
+
+### Debug ownership
+
+Byte logic to determine the index of new words look different than what I've seen in typescript. Let's debug it.
+
+Using VSCode, install `Rust` & `CodeLLDB` extensions then create a `launch.json`. Put a breakpoint anywhere and F5 it.  
 ```
-fn main() {
-    let number = 3;
-
-    if number {
-        println!("number was three");
-    }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ownership",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/ownership/target/debug/ownership",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+        }
+    ]
 }
 ```
+![debug](./images/debug-ownership.png)
+
+
