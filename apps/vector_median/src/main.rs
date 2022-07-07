@@ -1,3 +1,4 @@
+// 8.3 challenge
 use std::{io};
 
 fn main() {
@@ -12,7 +13,7 @@ fn main() {
     
     let list_length: u32 = match list_length.trim().parse() {
         Ok(num) => num,
-        Err(_) => 5,
+        Err(_) => panic!("Enter a Positive Integer Dummy"),
     };
 
     let mut vector: Vec<u32> = Vec::new();
@@ -27,7 +28,7 @@ fn main() {
         
         let input: u32 = match input.trim().parse() {
             Ok(num) => num,
-            Err(_) => 0,
+            Err(_) => panic!("Invalid input"),
         };
         vector.push(input);
     }

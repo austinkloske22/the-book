@@ -34,5 +34,14 @@ Using VSCode, install `Rust` & `CodeLLDB` extensions then create a `launch.json`
 ![debug](./images/debug-ownership.png)
 
 
-## Structures
+## Error Handling
+
+- `unwrap` and `expect` methods are very handy when prototyping, before you’re ready to decide how to handle errors. They leave clear markers in your code for when you’re ready to make your program more robust.
+
+- It’s advisable to have your code panic when it’s possible that your code could end up in a bad state.
+
+## Useful commnads 
+
+- `RUST_BACKTRACE=1 cargo run`
+- `cargo new 
 

@@ -2,6 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "guessing game",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/apps/guessing_game/target/debug/guessing_game",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+        },
+        {
             "name": "ownership",
             "type": "lldb",
             "request": "launch",
